@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HomePage — Ultimate Useful Websites Hub</title>
+  <meta name="description" content="Amit — the ultimate curated hub of useful websites for learning, productivity, entertainment, government services and more. Discover 50+ essential links with descriptions." />
+  <meta name="keywords" content="useful websites, link hub, resources, learning, productivity, coding, news, tools, AI, government, travel" />
+  <meta name="author" content="Amit Kumar" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Most — Ultimate Useful Websites Hub" />
+  <meta property="og:description" content="Curated collection of 150+ essential websites across categories: coding, learning, news, tools, shopping, AI, government & more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://usefulwebhub.com/" />
+  <meta property="og:image" content="https://usefulwebhub.com/og-image.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://usefulwebhub.com/#website",
+    "url": "https://usefulwebhub.com",
+    "name": "Useful Web Hub — Curated Directory of Essential Websites",
+    "description": "Explore essential websites for learning, jobs, AI tools, coding, gaming, productivity, and knowledge - everything you need in one smart hub.",
+    "inLanguage": "en",
+    "keywords": "learning, jobs, AI tools, coding, gaming, productivity, useful websites",
+    "publisher": {
+    "@type": "Organization",
+    "name": "Useful Web Hub",
+    "logo": {"@type": "ImageObject","url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2Fred-and-black-letter-logo-wallpaper--23714335528777240%2F&psig=AOvVaw0DQAZoVcT5eG0RfgAXozHv&ust=1763031226967000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODB5_u57JADFQAAAAAdAAAAABAE"}
+    },
+    "author": {"@type": "Person","name": "Amit Kumar"},
+    "potentialAction": {"@type": "SearchAction","target": "https://usefulwebhub.com/search?keyword={search_term_string}","query-input": "required name=search_term_string"}
+}
+  </script>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-1:#0f2027; --bg-2:#203a43; --card:rgba(255,255,255,0.04); --glass: rgba(255, 255, 255, 0.04);
+      --accent:#00e6ff; --accent-2:#e69500; --muted:#bfcbd6; --text-color-dark: #e6f2f8; --text-color-light: #05202a;
+      --font-size-base: 16px; --font-weight-base: 500;
+
+      /*Link Colors*/
+      --link-color-light: #0077cc;
+      --link-hover-light: #005fa3;
+      --link-color-dark: #00e6ff;
+      --link-hover-dark: #66f0ff;
+       
+      /*Text Color*/
+      --text-color-light: #05202a;
+      --text-color-dark: #e6f2f8;
+      
+      --desc-weight: 500;
+      --desc-size: 16px;
+      --desc-size: 16px;
+      --desc-weight: 500;
+      --desc-color-light: #111;
+      --desc-color-dark: #e6f2f8;
+
+
+    }
+    
+
+    body{margin:0;font-family:'Poppins',sans-serif; font-size: var(--font-size-base); font-size: var(--font-size-base);background:linear-gradient(135deg,var(--bg-1),var(--bg-2));color:var(--text-color-dark);line-height:1.6;scroll-behavior:smooth}
+    body.light{background:linear-gradient(135deg,#f6fbff,#eef6fa);color:var(--text-color-light)}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 18px; font-size: var(--font-size-base); font-weight: var(--font-weight-base);}
+
+    /*  Global Link Styling Based on Theme */
+    
+    body a {text-decoration: none; transition: color 0.2s ease-in-out;}
+    body.light a {color: var(--link-color-light);}
+    body.light a:hover,
+    body.light a:focus,
+    body.light a:active {color: var(--link-hover-light);}
+    body:not(.light) a {color: var(--link-color-dark);}
+    body:not(.light) a:hover,
+    body:not(.light) a:focus,
+    body:not(.light) a:active {color: var(--link-hover-dark);}
+    body.light p,
+    body.light .desc,
+    body.light .card-text,
+    body.light .section-description{color: #111; font-weight: 500;} 
+    
+
+    
+    /* Light theme: Make all description text darker and bolder */
+    body.light p,
+    body.light .desc,
+    body.light .card-text,
+    body.light .section-description,
+    body.light .info,
+    .light .text,
+    body.light .summary,
+    body.light .link small,
+    body.light .brand p,
+    body.light .card p,
+    body.light .service p,
+    body.light .wrap p,
+    body.light .grid p,
+    body.light .section-light p {color: #111 !important;font-weight: 500 !important;}
+
+    
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;width:100%;z-index:999;background:rgba(0,0,0,0.55);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.04)}
+    body.light nav{background:rgba(255,255,255,0.9);border-bottom:1px solid rgba(10,10,10,0.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand .logo{font-size:20px}
+    .brand h1{font-size:16px;margin:0}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    .nav-links{display:flex;gap:16px;align-items:center}
+    .nav-links a{color:var(--accent);text-decoration:none;font-weight:600}
+    .nav-links a:hover{color:var(--accent-2)}
+    .menu-toggle{display:none;background:transparent;border:none;color:var(--accent);font-size:20px}
+
+    /* HERO */
+    header.hero{padding:110px 0 36px;text-align:center}
+    header h2{font-size:34px;margin:8px 0 6px;background:linear-gradient(90deg,var(--accent),var(--accent-2));background-clip: text;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;text-transform:uppercase;letter-spacing:1px}
+    header p{max-width:900px;margin:8px auto 0;color:var(--muted);font-size:16px}
+    .hero-cta{margin-top:16px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+    .btn{padding:10px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#031018}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+
+    /* Search */
+    .search-row{display:flex;justify-content:center;margin-top:18px;gap:8px}
+    .search-row input{min-width:300px;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+
+    body.light .search-row input{border:1px solid rgba(10,10,10,0.08);background:#fff;color:#05202a}
+
+    /* GRID & CARDS */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);backdrop-filter:blur(6px);transition:transform .25s,box-shadow .25s}
+     body.light .card{background:#fff;border:1px solid rgba(10,10,10,0.04)}
+    .card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgba(0,0,0,0.25)}
+    .card h3{margin:0 0 10px;color:var(--accent-2)}
+    .link{display:block;padding:8px 6px;border-radius:8px;transition:background .12s}
+    .link:hover{background:rgba(255,255,255,0.02)}
+    .link a{font-weight:700;color:var(--accent);text-decoration:none}
+    .link small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+    
+    /* Common description styling */
+    p,
+    .desc,
+    .card-text,
+    .section-description {font-size: var(--desc-size);font-weight: var(--desc-weight);transition: color 0.3s ease;}
+
+   /* Light theme text color */
+    body.light p,
+    body.light .desc,
+    body.light .card-text,
+    body.light .section-description {color: var(--desc-color-light);}
+
+    /* Light theme: Make all key descriptions and footer text dark and readable */
+    body.light .linkhub-desc,
+    body.light .learnportal-desc,
+    body.light .blog-quickstep-desc,
+    body.light footer,
+    body.light footer p,
+    body.light .footer-note,
+    body.light .footer-brand,
+    body.light .footer-text {color: #111 !important;font-weight: 500 !important;}
+
+   /* Dark theme text color */
+   body:not(.light) p,
+   body:not(.light) .desc,
+   body:not(.light) .card-text,
+   body:not(.light) .section-description {color: var(--desc-color-dark);}
+     
+    
+    /* Sections */
+    .section-light{background-color:  #ffffff; color: #111 }
+    .section-dark{background-color: #1a1a1a ;  color: #e6f2f8}
+     section{margin:48px 0;padding:10px}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-title h2{margin:0;color:var(--accent-2)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .service{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+
+    /* Portfolio */
+    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .pf{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .pf img{width:100%;height:140px;object-fit:cover;display:block}
+
+    /* Contact */
+    .contact-box{max-width:760px;margin:0 auto;padding:18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04)}
+    body.light .contact-box{background:#fff}
+
+    /* Footer */
+    footer{padding:24px;text-align:center;color:var(--muted);border-top:1px solid rgba(60, 190, 233, 0.368);margin-top:40px}
+    footer a{color:  #5353e3;; text-decoration: underline;transition: color 0.2s ease;}
+    footer a:hover,footer a:focus,footer a:active{color: #1e90ff;}
+
+    
+
+    /* back to top */
+    #topBtn{position:fixed;right:18px;bottom:18px;padding:10px;border-radius:50%;display:none;z-index:1000;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-2));cursor:pointer}
+
+    /* responsive nav */
+    @media(max-width:880px){.nav-links{display:none}.menu-toggle{display:inline-block}}
+    @media(max-width:520px){header h2{font-size:22px}.search-row input{min-width:160px}}
+    .btn-primary {color: #004080 !important;font-weight: 600;}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="logo">🌐</div>
+        <div>
+          <h1 style="font-size:16px;margin:0">Most — Useful Websites Hub</h1>
+          <p style="margin:0;font-size:12px;color:var(--muted)">Curated · Organized · Trusted</p>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#links">Links</a>
+          <a href="#services">Why This</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button id="themeToggle" class="btn" style="border-radius:8px;padding:8px 10px" title="Toggle theme">🌗</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="wrap">
+      <h2>Discover 150+ Essential Websites — Everything Useful, One Place</h2>
+      <p>Welcome — a professionally curated directory of the most helpful websites across categories: coding, learning, tools, news, shopping, government services, AI, design, finance and more. Save time — find the right site in one click.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#links">Explore Links</a>
+        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+      </div>
+
+      <div class="search-row" style="margin-top:18px">
+        <input id="search" type="search" placeholder="Search links (e.g., 'leetcode', 'pdf', 'gov', 'ai')" aria-label="Search links">
+        <button class="btn btn-ghost" onclick="clearSearch()">Clear</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="wrap" role="main">
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="aboutTitle">
+      <div class="section-title">
+        <h2 id="aboutTitle">About This Hub</h2>
+      </div>
+      <p style="color:var(--muted);max-width:920px">This hub is created to make the web simple — no more searching dozens of sites. Whether you're learning to code, searching for government services, comparing flights, or finding a PDF tool — this curated list covers 50+ high-quality websites with brief descriptions so you can jump straight to what matters.</p>
+    </section>
+
+    <!-- LINKS (50+ links across categories) -->
+    <section id="links" aria-labelledby="linksTitle">
+      <div class="section-title"><h2 id="linksTitle">Curated Links — All Categories</h2></div>
+
+      <div class="grid" id="linksGrid">
+
+        <!-- Social -->
+        <div class="card" data-category="social">
+          <h3>Social & Communication</h3>
+          <div class="link"><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><small>Connect with family, friends and groups.</small></div>
+          <div class="link"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><small>Share photos, reels and explore trends.</small></div>
+          <div class="link"><a href="https://x.com" target="_blank" rel="noopener">Twitter (X)</a><small>Real-time news & conversations.</small></div>
+          <div class="link"><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a><small>Professional networking and job discovery.</small></div>
+          <div class="link"><a href="https://web.whatsapp.com" target="_blank" rel="noopener">WhatsApp Web</a><small>Use WhatsApp from your browser.</small></div>
+          <div class="link"><a href="https://telegram.org" target="_blank" rel="noopener">Telegram</a><small>Secure messaging and communities.</small></div>
+        </div>
+
+        <!-- Coding & Dev -->
+        <div class="card" data-category="coding">
+          <h3>Coding & Developer Resources</h3>
+          <div class="link"><a href="https://w3schools.com" target="_blank" rel="noopener">W3Schools</a><small>Beginner-friendly web tutorials.</small></div>
+          <div class="link"><a href="https://freecodecamp.org" target="_blank" rel="noopener">FreeCodeCamp</a><small>Hands-on projects and certifications.</small></div>
+          <div class="link"><a href="https://leetcode.com" target="_blank" rel="noopener">LeetCode</a><small>Coding problems for interviews.</small></div>
+          <div class="link"><a href="https://geeksforgeeks.org" target="_blank" rel="noopener">GeeksforGeeks</a><small>Data structures & algorithm guides.</small></div>
+          <div class="link"><a href="https://github.com" target="_blank" rel="noopener">GitHub</a><small>Host, collaborate and manage code.</small></div>
+          <div class="link"><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow</a><small>Community Q&A for developers.</small></div>
+        </div>
+
+        <!-- Learning -->
+        <div class="card" data-category="learning">
+          <h3>Learning & Courses</h3>
+          <div class="link"><a href="https://coursera.org" target="_blank" rel="noopener">Coursera</a><small>University courses & professional certificates.</small></div>
+          <div class="link"><a href="https://edx.org" target="_blank" rel="noopener">edX</a><small>Free & paid courses from top universities.</small></div>
+          <div class="link"><a href="https://udemy.com" target="_blank" rel="noopener">Udemy</a><small>Affordable courses across skills & hobbies.</small></div>
+          <div class="link"><a href="https://khanacademy.org" target="_blank" rel="noopener">Khan Academy</a><small>Free learning resources for school subjects.</small></div>
+          <div class="link"><a href="https://programiz.com" target="_blank" rel="noopener">Programiz</a><small>Beginner-friendly programming lessons.</small></div>
+           <div class="link"><a href="https://online.stanford.edu/free-courses" target="_blank" rel="noopener">StandFord</a><small>This online courses provide you with an affordable and flexible way to learn new skills and study new and emerging topics.</small></div>
+        </div>
+
+        <!-- News -->
+        <div class="card" data-category="news">
+          <h3>News & Media</h3>
+          <div class="link"><a href="https://bbc.com" target="_blank" rel="noopener">BBC</a><small>Global news and analysis.</small></div>
+          <div class="link"><a href="https://thehindu.com" target="_blank" rel="noopener">The Hindu</a><small>In-depth Indian reporting.</small></div>
+          <div class="link"><a href="https://ndtv.com" target="_blank" rel="noopener">NDTV</a><small>Indian news & live updates.</small></div>
+          <div class="link"><a href="https://reuters.com" target="_blank" rel="noopener">Reuters</a><small>International news wire.</small></div>
+          <div class="link"><a href="https://www.indiatvnews.com/" target="_blank" rel="noopener">India TV</a><small>it not only provides the latest news and updates focusing on current affairs, entertainment, and sports.</small></div>
+
+        </div>
+
+        <!-- Tools -->
+        <div class="card" data-category="tools">
+          <h3>Productivity & Utilities</h3>
+          <div class="link"><a href="https://smallpdf.com" target="_blank" rel="noopener">SmallPDF</a><small>Compress, convert and edit PDFs online.</small></div>
+          <div class="link"><a href="https://canva.com" target="_blank" rel="noopener">Canva</a><small>Design tool for graphics & social posts.</small></div>
+          <div class="link"><a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a><small>Free high-quality stock photos.</small></div>
+          <div class="link"><a href="https://remove.bg" target="_blank" rel="noopener">RemoveBG</a><small>Remove image backgrounds instantly.</small></div>
+          <div class="link"><a href="https://bitly.com" target="_blank" rel="noopener">Bitly</a><small>Shorten and track links.</small></div>
+        </div>
+
+        <!-- Shopping -->
+        <div class="card" data-category="shopping">
+          <h3>Shopping & Deals</h3>
+          <div class="link"><a href="https://amazon.in" target="_blank" rel="noopener">Amazon (IN)</a><small>Massive marketplace for everything.</small></div>
+          <div class="link"><a href="https://flipkart.com" target="_blank" rel="noopener">Flipkart</a><small>Popular Indian e-commerce store.</small></div>
+          <div class="link"><a href="https://ebay.com" target="_blank" rel="noopener">eBay</a><small>Buy & sell globally.</small></div>
+          <div class="link"><a href="https://aliexpress.com" target="_blank" rel="noopener">AliExpress</a><small>International deals and gadgets.</small></div>
+           <div class="link"><a href="https://www.meshoo.com" target="_blank" rel="noopener">Meshoo</a><small>"Discover trending Meesho products with direct links and images — shop your favorites in one click!"</small></div>
+        </div>
+
+        <!-- Finance -->
+        <div class="card" data-category="finance">
+          <h3>Finance & Money</h3>
+          <div class="link"><a href="https://paytm.com" target="_blank" rel="noopener">Paytm</a><small>Payments, wallet & online shopping (India).</small></div>
+          <div class="link"><a href="https://finance.yahoo.com/" target="_blank" rel="noopener">Yahoo Finance</a><small>Market data, news, stock tracking.</small></div>
+          <div class="link"><a href="https://google.com/finance" target="_blank" rel="noopener">Google Finance</a><small>Market news & stock quotes.</small></div>
+          <div class="link"><a href="https://www.ft.com/" target="_blank" rel="noopener">Finencial Times</a><small>Premium content on international finance and policy.</small></div>
+          <div class="link"><a href="https://www.bankbazaar.com/" target="_blank" rel="noopener">Bank Bazaar</a><small>Loans, credit cards, calculators.</small></div>
+        </div>
+
+        <!-- Government -->
+        <div class="card" data-category="government">
+          <h3>Government Services</h3>
+          <div class="link"><a href="https://india.gov.in" target="_blank" rel="noopener">National Portal of India</a><small>Access government services & info.</small></div>
+          <div class="link"><a href="https://uidai.gov.in" target="_blank" rel="noopener">UIDAI / Aadhaar</a><small>Official Aadhaar services & updates.</small></div>
+          <div class="link"><a href="https://passportindia.gov.in" target="_blank" rel="noopener">Passport Seva</a><small>Passport application & tracking.</small></div>
+          <div class="link"><a href="https://irctc.co.in" target="_blank" rel="noopener">IRCTC</a><small>Book train tickets in India.</small></div>
+          <div class="link"><a href="https://parivahan.gov.in" target="_blank" rel="noopener">parivahan Sewa</a><small>To automate all Vehicle Registration and Driving License related activities in Passport, Driving Licence, Passport.</small></div>
+        </div>
+
+        <!-- Travel -->
+        <div class="card" data-category="travel">
+          <h3>Travel & Maps</h3>
+          <div class="link"><a href="https://google.com/maps" target="_blank" rel="noopener">Google Maps</a><small>Navigation, places & directions.</small></div>
+          <div class="link"><a href="https://makemytrip.com" target="_blank" rel="noopener">MakeMyTrip</a><small>Flights, hotels and holiday packages.</small></div>
+          <div class="link"><a href="https://airbnb.com" target="_blank" rel="noopener">Airbnb</a><small>Book stays anywhere in the world.</small></div>
+           <div class="link"><a href="https://www.waze.com" target="_blank" rel="noopener">Waze</a><small>Real-time traffic, alerts. Crowdsourced driving app with road hazard updates.</small></div>
+           <div class="link"><a href="https://www.ixigo.com" target="_blank" rel="noopener">Ixigo</a><small>Book train tickets with ixigo’s Alternate Travel Plan—get up to 3X refund! Search & book IRCTC train tickets, Track your train status and Get Live seat availability.</small></div>
+        </div>
+
+        <!-- AI & Research -->
+        <div class="card" data-category="ai">
+          <h3>AI, Research & Knowledge</h3>
+          <div class="link"><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a><small>Conversational AI for ideas and assistance.</small></div>
+          <div class="link"><a href="https://perplexity.ai" target="_blank" rel="noopener">Perplexity</a><small>Sourced AI answers and research aid.</small></div>
+          <div class="link"><a href="https://www.blackbox.ai/" target="_blank" rel="noopener">Black Box</a><small>Preprint research papers across fields.</small></div>
+          <div class="link"><a href="https://copilot.microsoft.com/" target="_blank" rel="noopener">Copilot</a><small>Microsoft Copilot is a generative artificial intelligence chatbot developed by Microsoft AI, a division of Microsoft. </small></div>
+          <div class="link"><a href="https://gemini.google.com/app" target="_blank" rel="noopener">Google Gemini</a><small>Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI.</small></div>
+          
+          
+        </div>
+
+        <!-- Media & Streaming -->
+        <div class="card" data-category="media">
+          <h3>Media & Streaming</h3>
+          <div class="link"><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a><small>Videos, tutorials and entertainment.</small></div>
+          <div class="link"><a href="https://netflix.com" target="_blank" rel="noopener">Netflix</a><small>Subscription-based video streaming.</small></div>
+          <div class="link"><a href="https://primevideo.com" target="_blank" rel="noopener">Prime Video</a><small>Amazon's streaming platform.</small></div>
+          <div class="link"><a href="https://justwatch.com" target="_blank" rel="noopener">JustWatch</a><small>Find where to stream a movie or show.</small></div>
+          <div class="link"><a href="https://www.hotstar.com/in/home" target="_blank" rel="noopener">Hotstar</a><small>Hotstar provide the movies, serials and webseries with subscrption.</small></div>
+          <div class="link"><a href="https://moviesandtv.myvi.in/" target="_blank" rel="noopener">VI Movies & TV</a><small>Watch new TV shows, movies, breaking live news & live tv online in full HD on Vi Movies and TV. Over 450+ live channels & 10,000+ titles across 13 languages.</small></div>
+
+        </div>
+
+        <!-- Health & Wellness -->
+        <div class="card" data-category="health">
+          <h3>Health & Wellness</h3>
+          <div class="link"><a href="https://webmd.com" target="_blank" rel="noopener">WebMD</a><small>Health information and symptom checker.</small></div>
+          <div class="link"><a href="https://who.int" target="_blank" rel="noopener">WHO</a><small>World Health Organization resources.</small></div>
+          <div class="link"><a href="https://www.netmeds.com" target="_blank" rel="noopener">NetMeds</a><small>Netmeds Provide real price about health care.</small></div>
+          <div class="link"><a href="https://www.1mg.com/" target="_blank" rel="noopener">1MG Care</a><small>Order medicines online at 1mg's medicine store in 100+ cities with free home delivery and exciting offers.</small></div>
+          <div class="link"><a href="https://www.practo.com/" target="_blank" rel="noopener">Practo Health Care</a><small>Access video consultation with India’s top doctors on the Practo app. Connect with doctors online, available 24/7, from the comfort of your home.</small></div>
+        </div>
+
+        <!-- Education & Kids -->
+        <div class="card" data-category="education">
+          <h3>Education & Kids</h3>
+          <div class="link"><a href="https://khanacademy.org" target="_blank" rel="noopener">Khan Academy</a><small>Free lessons for school-level learning.</small></div>
+          <div class="link"><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a><small>Search academic literature and papers.</small></div>
+          <div class="link"><a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a><small>Arxiv Provide the way you work and learn easy .</small></div>
+          <div class="link"><a href="https://www.autodraw.com/" target="_blank" rel="noopener">Auto Draw</a><small>Autodraw is use to draw anything in it with easyily in it.</small></div>
+          <div class="link"><a href="https://www.calculatorsoup.com/" target="_blank" rel="noopener">Calculator</a><small>All type of calculating available in it.</small></div>
+          <div class="link"><a href="https://www.mathsisfun.com/" target="_blank" rel="noopener">Math is Fun</a><small>Free math games and question availabli in this site.</small></div>
+          
+        </div>
+
+        <!-- Design & Creative -->
+        <div class="card" data-category="design">
+          <h3>Design & Creativity</h3>
+          <div class="link"><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a><small>Design inspiration and portfolios.</small></div>
+          <div class="link"><a href="https://behance.net" target="_blank" rel="noopener">Behance</a><small>Creative portfolios and projects.</small></div>
+          <div class="link"><a href="https://nkcreatives.com/" target="_blank" rel="noopener">NK Creatives</a><small>Al type of creative and makingg website available here.</small></div>
+          <div class="link"><a href="https://dribbble.com/" target="_blank" rel="noopener">Dribble</a><small>Explore work from the most talented and accomplished designers ready to take on your next project.</small></div>
+          <div class="link"><a href="https://www.saasframe.io/" target="_blank" rel="noopener">SaasFrame</a><small>Create websites, product interfaces and email sequences for your SaaS faster than ever with SaaSFrame UX / UI library.</small></div>
+        </div>
+
+        <!-- DevOps & Hosting -->
+        <div class="card" data-category="devops">
+          <h3>DevOps & Hosting</h3>
+           <div class="link"><a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a><small>Host static sites with CI/CD.</small></div>
+           <div class="link"><a href="https://www.vodien.com/" target="_blank" rel="noopener">vodien</a><small>NoOps vs DevOps in Modern Hosting: Choosing the Right Approach</small></div>
+           <div class="link"><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a><small>Frontend hosting & edge functions.</small></div>
+           <div class="link"><a href="https://github.com/actions" target="_blank" rel="noopener">GitHub Actions</a><small>Automate workflows and deployments.</small></div>
+           <div class="link"><a href="https://digismartiens.com/" target="_blank" rel="noopener">digismartiens</a><small>The real magic happens when your product is live, running smoothly, and scaling like a champ. That’s where Digismarties steps in — your behind-the-scenes powerhouse for DevOps, hosting, and deployment.</small></div>
+        </div>
+
+        <!--Information and Knowledeg-->
+        <div class ="card" data-category="knowledge">
+          <h3>Information and Knowledege</h3>
+          <div class="link"><a href="https://explore.org/livecams" target="_blank" rel="noopener">Explore Livecams</a><small>It provide to watch live animal in the whole world.</small></div>
+          <div class="link"><a href="https://simple.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a><small>Access all the contents of Wikipedia in simple English.</small></div>
+          <div class="link"><a href="https://haveibeenpwned.com/" target="_blank" rel="noopener">Have I been Pawned</a><small>Check if your email, password, phone number, and other data have been leaked in any data breach.</small></div>
+          <div class="link"><a href="https://archive.org/"target=_blank rel="noopener">Archieve</a><small>Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages.</small></div>
+          <div class="link"><a href="https://everytimezone.com/" target="_blank" rel="noopener">Time Zone</a><small>you can find the time difference between your selected cities with our world time converter. Just input any date: past, present, or in the future if you’re trying to plan ahead.</small></div>
+          <div class="link"><a href="https://earth.nullschool.net/"target=_blank rel="noopener">Earth Nullscholl</a><small>Earth Nullschool, accessible at earth.nullschool.net, provides users with a dynamic and interactive map that displays various environmental data.</small></div>
+        
+        </div>
+
+        <!--Funny and Relaxing Websites-->
+        <div class="card" data-category="Relaxing">
+           <h3>Funy and Relaxing</h3>
+          <div class="link"><a href="https://hackertyper.com/" target="_blank" rel="noopener">hackertyper</a><small>Prank your friends with this cool hacker prank simulator.</small></div>
+          <div class="link"><a href="https://knowyourmeme.com/memes/" target="_blank" rel="noopener">Know your Meme</a><small>It’s a database of viral memes, videos, image macros, and catchphrases.</small></div>
+          <div class="link"><a href="https://www.papertoys.com/" target="_blank" rel="noopener">Paper Toys</a><small>A fun website with hundreds of custom-designed paper toys.</small></div>
+          <div class="link"><a href="https://www.wcoflix.tv/" target="_blank" rel="noopener">Wcoflix</a><small>Prank your friends with this cool hacker prank simulator.</small></div>
+          <div class="link"><a href="https://dinahmoelabs.com/plink/" target="_blank" rel="noopener">Plink</a><small>If you are a music lover and feeling bored, just open Plink in a web or mobile browser and have fun playing your own tunes.</small></div>
+          <div class="link"><a href="https://www.mapcrunch.com/" target="_blank" rel="noopener">Mapcrunch</a><small>By default, this site gives you a random Google map from anywhere in the world. You also select a country and explore it via maps.</small></div>
+        </div>
+
+        <!--Online Gaming-->
+        <div class="card" data-category="Gaming">
+          <h3>Best Online Gaming</h3>
+          <div class="link"><a href="https://skribbl.io/" target="_blank" rel="noopener">Skribbl</a><small>It is a free online multiplayer drawing and guessing game to cure boredom.</small></div>
+          <div class="link"><a href="https://www.crazygames.com/" target="_blank" rel="noopener">Crazy Games</a><small>njoy the latest and best online games on your PC or smartphone without intrusive ads.</small></div>
+          <div class="link"><a href="https://poki.com/" target="_blank" rel="noopener">Poki Game</a><small>Our games are playable on desktop, tablet and mobile so you can enjoy them at home or on the road. </small></div>
+          <div class="link"><a href="https://www.y8.com/" target="_blank" rel="noopener">Y8 Game</a><small>Experience nostalgia with Flash games on Y8! Enjoy classic gameplay and retro fun in a wide range of Flash-based games. Beat their score.</small></div>
+          <div class="link"><a href="https://www.bgames.com/" target="_blank" rel="noopener">Bgames</a><small>At BGames, we offer an amazing collection of free online games geared specifically toward boys. Check out amazing new content every day and play awesome MMO Fantasy and War games.</small></div>
+          <div class="link"><a href="https://simulator.money/play" target="_blank" rel="noopener">Fake Desktop windows Game</a><small>It is a browser-based, retro sandbox game that lets you see the impact of your financial decisions. It simulates jobs, mortgages, pensions, savings, and real estate.</small></div>
+        </div>
+       
+       <!--Carrier & Job Searching Website-->
+        <div class="card" data-category="-Carrier & Job Searching">
+          <h3>Carrier & Job Searching</h3>
+          <div class="link"><a href="https://www.glassdoor.co.in/" target="_blank" rel="noopener">Glassdoor</a><small>Search millions of jobs, salaries and company reviews and chat anonymously about worklife.</small></div>
+          <div class="link"><a href="https://www.naukri.com/ target="_blank" rel="noopener">Naukri</a><small>Apply to millions of job opportunities across top companies, industries and locations on India's No.1 job site. Apply online.</small></div>
+          <div class="link"><a href="https://www.foundit.in/" target="_blank">foundit</a><small>Explore Over 8,00,000 active jobs on foundit, India’s leading job portal. Apply for the latest vacancies across top companies and cities. </small></div>
+          <div class="link"><a href="https://in.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><small>LinkedIn is an American business and employment-oriented social networking service. The platform is primarily used for professional</small></div>
+          <div class="link"><a href="https://in.indeed.com/" target="_blank" rel="noopener">Indeed</a><small>With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews</small></div>
+        </div> 
+        
+        
+        <!--Image, Vedio and Design Element-->
+        <div class="card" data-category="Image, Vedio and Design Element">
+         <h3>Image, Vedio and Design Element</h3>
+         <div class="link"><a href="https://generated.photos/faces" target="_blank" rel="noopener">Generated</a><small> Generate faces and humans with the help of AI.</small></div>
+         <div class="link"><a href="https://www.iconfinder.com/" target="_blank" rel="noopener">Icon Finder</a><small>he best place to find icons in all sizes.</small></div>
+         <div class="link"><a href="https://cleanup.pictures/" target="_blank" rel="noopener">Cleanup Picture</a><small>Remove unwanted objects, people, or text from pictures.</smasll></div>
+         <div class="link"><a href="https://www.cutout.pro/" target="_blank" rel="noopener">Cutout Pro</a><small>ake advantage of the power of artificial intelligence to remove background and unwanted objects, face cutout, background diffusion, enhance videos and photos, blur the background, and cartoonize selfies.</small></div>
+         <div class="link"><a href="https://imglarger.com/" target="_blank" rel="noopener">AI Image Enlarger</a><small>If you have a low-quality photo with low resolution,  The website has a bunch of more image-editing tools like AI Anime16K, AI Image Upscaler, AI Enhancer, AI Sharpener, Magic Eraser, AI Cartoonizer, AI Face Retouch, AI BG Remover, AI Denoiser, and AI Photo Colorizer.</small></div>
+        </div>
+
+        <!-- Misc Useful -->
+        <div class="card" data-category="misc">
+          <h3>Other Helpful Sites</h3>
+          <div class="link"><a href="https://mathway.com" target="_blank" rel="noopener">Mathway</a><small>Solve math problems step-by-step.</small></div>
+          <div class="link"><a href="https://translate.google.com" target="_blank" rel="noopener">Google Translate</a><small>Translate text between languages.</small></div>
+          <div class="link"><a href="https://calendar.google.com" target="_blank" rel="noopener">Google Calendar</a><small>Plan events and reminders.</small></div>
+          <div class="link"><a href="https://todoist.com" target="_blank" rel="noopener">Todoist</a><small>Task manager to stay organized.</small></div>
+        </div>
+
+      </div> <!-- /links grid -->
+    </section>
+
+    <!-- WHY THIS -->
+    <section id="services" aria-labelledby="servicesTitle">
+      <div class="section-title"><h2 id="servicesTitle">Why This Hub?</h2></div>
+      <div class="services">
+        <div class="service"><strong>Curated</strong><p style="margin:6px 0 0;color:var(--muted)">Every link hand-selected for reliability and usefulness.</p></div>
+        <div class="service"><strong>Fast</strong><p style="margin:6px 0 0;color:var(--muted)">Client-side search and lightweight design for quick access.</p></div>
+        <div class="service"><strong>Accessible</strong><p style="margin:6px 0 0;color:var(--muted)">Responsive layout and semantic markup improve usability.</p></div>
+        <div class="service"><strong>Future-ready</strong><p style="margin:6px 0 0;color:var(--muted)">Dark mode, analytics placeholder, SEO and structured data included.</p></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SAMPLE -->
+    <section id="portfolio" aria-labelledby="portfolioTitle">
+      <div class="section-title"><h2 id="portfolioTitle">Portfolio — Sample Projects</h2></div>
+      <div class="portfolio">
+        <div class="pf"><img class="lazy" data-src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=60" alt="Project 1"><div style="padding:10px"><strong>LinkHub</strong><div class="desc">Static aggregator focused on speed and search.</div></div></div>
+        <div class="pf"><img class="lazy" data-src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&q=60" alt="Project 2"><div style="padding:10px"><strong>LearnPortal</strong><div class="desc">Curated learning paths & resources.</div></div></div>
+      </div>
+    </section>
+
+    <!-- BLOG SAMPLE -->
+    <section id="blog" aria-labelledby="blogTitle">
+      <div class="section-title"><h2 id="blogTitle">Blog — Quick Tips</h2></div>
+      <div class="desc"><strong>Tip:</strong> Use the search box above to quickly find a link category or site name. Bookmark this page for instant access to your favorite resources.</div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contactTitle">
+      <div class="section-title"><h2 id="contactTitle">Contact</h2></div>
+
+      <div class="contact-box">
+        <p style="color:var(--muted)">Questions, suggestions or new links? Send a message — the form opens your email client with a composed message (no server required).</p>
+
+        <form id="contactForm" onsubmit="submitContact(event)" style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+          <input id="name" type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+          <input id="email" type="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+          <textarea id="message" rows="5" placeholder="Your message" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit"></textarea>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn-primary" type="submit">Send Email</button>
+            <a class="btn btn-ghost" href="mailto:www.amitkumar7565@gmail.com?subject=Suggestion%20for%20Pinki%20Hub">Email: www.amitkumar7565@gmail.com</a>
+            <a class="btn btn-ghost" href="tel:+917565886033">Call +91 7565886033</a>
+          </div>
+
+          <div style="color:var(--muted);font-size:13px">Form uses your email client to send — no server storage.</div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div style="max-width:1200px;margin:0 auto;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© <strong>Pinki Hub</strong> · Built with care · 2025</div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a href="#links">Sitemap</a>
+        <a href="Privacy-Policy.html"target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="topBtn" title="Back to top" onclick="scrollToTop()">↑</button>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    function toggleMenu(){
+      const nav = document.getElementById('navLinks');
+      if(nav.style.display === 'flex') nav.style.display = '';
+      else nav.style.display = 'flex';
+      nav.style.flexDirection = (window.innerWidth <= 880) ? 'column' : 'row';
+    }
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    function applyTheme(t){
+      if(t === 'light') document.body.classList.add('light'); else document.body.classList.remove('light');
+      localStorage.setItem('k_theme', t);
+    }
+    const saved = localStorage.getItem('k_theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    applyTheme(saved);
+    themeToggle.addEventListener('click', () => {
+      const next = document.body.classList.contains('light') ? 'dark' : 'light';
+      applyTheme(next);
+    });
+
+    // Search filter
+    const search = document.getElementById('search');
+    const linksGrid = document.getElementById('linksGrid');
+    function normalize(s){ return s.trim().toLowerCase(); }
+    function clearSearch(){ search.value=''; filterLinks(); }
+    search.addEventListener('input', filterLinks);
+    function filterLinks(){
+      const q = normalize(search.value);
+      const cards = linksGrid.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = normalize(card.innerText);
+        card.style.display = (!q || text.includes(q)) ? '' : 'none';
+      });
+    }
+
+    // Back to top button
+    const topBtn = document.getElementById('topBtn');
+    window.addEventListener('scroll', () => {
+      topBtn.style.display = (window.scrollY > 400) ? 'block' : 'none';
+    });
+    function scrollToTop(){ window.scrollTo({top:0,behavior:'smooth'}); }
+
+    // Lazy load images
+    document.addEventListener('DOMContentLoaded', () => {
+      const imgs = document.querySelectorAll('img.lazy');
+      const load = img => { const s = img.getAttribute('data-src'); if(s){ img.src = s; img.removeAttribute('data-src'); } };
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach(e => { if(e.isIntersecting){ load(e.target); obs.unobserve(e.target); } });
+        }, {rootMargin:'50px'});
+        imgs.forEach(i => io.observe(i));
+      } else { imgs.forEach(load); }
+    });
+
+    // Contact form (mailto)
+    function submitContact(e){
+      e.preventDefault();
+      const n = encodeURIComponent(document.getElementById('name').value);
+      const em = encodeURIComponent(document.getElementById('email').value);
+      const msg = encodeURIComponent(document.getElementById('message').value);
+      const subject = encodeURIComponent('Message from Kareja Hub — ' + n);
+      const body = encodeURIComponent('From: ' + n + ' (' + em + ')%0A%0A' + msg);
+      window.location.href = 'mailto:www.amitkumar7565@gmail.com?subject=' + subject + '&body=' + body;
+    }
+
+    // Smooth anchor scroll offset for fixed nav
+    (function(){
+      const OFFSET = 90;
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e){
+          const id = this.getAttribute('href').slice(1);
+          if(!id) return;
+          const target = document.getElementById(id);
+          if(target){ e.preventDefault(); const top = target.getBoundingClientRect().top + window.scrollY - OFFSET; window.scrollTo({top,behavior:'smooth'}); }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Analytics placeholder (replace with your ID when ready) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  -->
+
+</body>
+</html>
